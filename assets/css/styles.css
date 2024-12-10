@@ -1,0 +1,189 @@
+main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 300px;
+    height: auto;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 0px 16px;
+    border-radius: 5px;
+
+}
+
+.login-container h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #444;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #2C401D;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group input:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+.form-options {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    margin: 0px 10px 30px 10px;
+}
+
+.form-options label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Fjerner standard-stil på checkbox */
+input[type="checkbox"] {
+    width: 30px; /* Juster størrelse */
+    height: 30px; /* Juster størrelse */
+    appearance: none;
+    border: 2px solid #2C401D; /* Grøn grænse */
+    border-radius: 6px; /* Runde hjørner */
+    background-color: white; /* Mørkegrøn baggrund */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Når checkboxen er markeret */
+input[type="checkbox"]:checked {
+    background-color: #2C401D; /* Holder baggrunden mørkegrøn */
+    border-color: #2C401D; /* Holder grænsen grøn */
+    
+}
+
+/* Style til fluebenet */
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    width: 8px; /* Tykkelse af fluebenet */
+    height: 14px; /* Længde af fluebenet */
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    top: 50%; /* Vertikalt center */
+    left: 50%; /* Horisontalt center */
+    transform: translate(-50%, -60%) rotate(45deg); /* Placering og rotation */
+}
+
+
+
+
+
+
+
+
+.auth-actions {
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch; 
+}
+
+.auth-actions a {
+    align-self: flex-end; 
+    text-align: right; 
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #638C3E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #2C401D;
+    transition: 0.3s;
+}
+
+.social-login {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-login a img {
+    width: 40px;
+    height: 40px;
+}
+
+.registration-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    font-size: 0.9em;
+    width: 100%;
+    max-width: 400px;
+    color: white;
+}
+
+.registration-links a {
+    color: black;
+}
+
+#registration-btn {
+    background-color: #2C401D;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+#registration-btn:hover {
+    background-color: #638C3E;
+    transition: 0.3s;
+}
+
+.footer-links a {
+    color: #638C3E;
+    text-decoration: none;
+}
